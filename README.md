@@ -79,15 +79,31 @@ Confusion matrices and ROC curves are generated for model evaluation. The result
 
 ### Performance of Models
 
-1. **Logistic Regression:**
-   - Accuracy: 51.07%
-   - High recall for class 1.
-   - Low precision for class 0, indicating a high number of false positives.
+Based on the analysis of various machine learning models for predicting stock price movement, here is a summary of the results:
 
-2. **Random Forest:**
-   - Accuracy: 53.93%
-   - Balanced precision and recall for both classes.
-   - Balanced F1Score for class 1, indicating good overall performance.
+### Model Performance Summary:
+
+| Model                     | Accuracy | Precision | Recall | F1-Score |
+|---------------------------|----------|-----------|--------|----------|
+| Logistic Regression       | 0.511    | 0.26      | 0.51   | 0.35     |
+| Random Forest             | 0.539    | 0.54      | 0.54   | 0.54     |
+| Support Vector Machine    | 0.511    | 0.26      | 0.51   | 0.35     |
+| Decision Tree             | 0.509    | 0.51      | 0.51   | 0.51     |
+| K-Nearest Neighbors       | 0.518    | 0.52      | 0.52   | 0.52     |
+| Naive Bayes               | 0.511    | 0.26      | 0.51   | 0.35     |
+| AdaBoost                  | 0.503    | 0.50      | 0.50   | 0.47     |
+| Gradient Boosting         | 0.521    | 0.52      | 0.52   | 0.48     |
+
+
+### Summary:
+
+1. **Random Forest and Gradient Boosting:** These models outperform others in terms of accuracy, precision, recall, and F1-score. They demonstrate a better ability to capture the complexities in the data.
+
+2. **Logistic Regression, Support Vector Machine, Naive Bayes, and AdaBoost:** These models show similar performance with accuracy around 50%. They may have limitations in capturing the underlying patterns in stock price movements.
+
+3. **Decision Tree and K-Nearest Neighbors:** These models perform reasonably well but are not as robust as Random Forest and Gradient Boosting.
+
+It's essential to consider the specific characteristics of the stock market and the dataset. Further tuning of hyperparameters or feature engineering might enhance model performance. Additionally, evaluating models on different time periods or with additional features could provide insights into their robustness and generalizability.
 
 ### Conclusion
 
