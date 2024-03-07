@@ -62,14 +62,20 @@ The problem is formulated as a binary classification task, where the target vari
 
 ### Models Used
 
-Two machine learning models are employed for prediction:
+Several machine learning models are employed for prediction:
 
 1. **Logistic Regression:** A linear model for binary classification.
 2. **Random Forest Classifier:** An ensemble model combining multiple decision trees.
+3. **Support Vector Machine:** Utilizes hyperplanes to classify data points.
+4. **Decision Tree:** A tree-like model that predicts outcomes based on input features.
+5. **K-Nearest Neighbors:** Classifies data points based on the majority class among their k-nearest neighbors.
+6. **Naive Bayes:** A probabilistic model based on Bayes' theorem.
+7. **AdaBoost:** An ensemble model that combines weak learners to form a strong learner.
+8. **Gradient Boosting:** Builds a strong model by combining the predictions of multiple weak models.
 
 ### Model Evaluation
 
-Both models are trained on the data and evaluated using accuracy scores and classification reports.
+All models are trained on the data and evaluated using accuracy scores and classification reports.
 
 ### Visualizations and Summary
 
@@ -94,7 +100,6 @@ Based on the analysis of various machine learning models for predicting stock pr
 | AdaBoost                  | 0.503    | 0.50      | 0.50   | 0.47     |
 | Gradient Boosting         | 0.521    | 0.52      | 0.52   | 0.48     |
 
-
 ### Summary:
 
 1. **Random Forest and Gradient Boosting:** These models outperform others in terms of accuracy, precision, recall, and F1-score. They demonstrate a better ability to capture the complexities in the data.
@@ -113,4 +118,3 @@ While both models show modest performance, the Random Forest model outperforms L
 
 1. Install necessary libraries using `pip install -r requirements.txt`.
 2. Run the Jupyter notebook `stock_price_prediction.ipynb` for step-by-step execution of the project.
-
